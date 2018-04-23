@@ -18,9 +18,10 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         for(int j=0; j<3; j++) {
-            for (int k=0; k<6; k++) {
+            for (int k=0; k<7; k++) {
+                //instead of myButton being an ImageButton, it should probably be an object that incorporates ImageButtons.
                 ImageButton myButton = new ImageButton(this);
-                cards[(6*j)+k] = myButton;
+                cards[(7*j)+k] = myButton;
                 //android:id="@+id/buttonContainer"
                 //how to set image?
                 //myButton.();
