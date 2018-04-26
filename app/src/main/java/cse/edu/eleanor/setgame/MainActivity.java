@@ -41,10 +41,10 @@ public class MainActivity extends AppCompatActivity {
             shuffleArray(cards);
 
             System.out.println(cards);
-
-            for(int j = 0; j<81; j++){
-                System.out.println(cards[j].toString());
-            }
+//
+//            for(int j = 0; j<81; j++){
+//                System.out.println(cards[j].toString());
+//            }
 
             //how to set imagebutton image, will need this later.
             //ImageButton btn = (ImageButton)findViewById(R.id.imageButton1);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            this.requestWindowFeature(Window.FEATURE_NO_TITLE);
+            //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
     }
