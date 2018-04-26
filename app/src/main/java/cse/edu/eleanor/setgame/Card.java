@@ -13,4 +13,8 @@ public class Card {
         shape = Shape;
         shading = Shading;
     }
+
+    public String toString(){
+        return("Color:"+color+" Number:"+number+" Shape:"+shape+" Shading: "+shading);
+    }
 }
