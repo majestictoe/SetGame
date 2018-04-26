@@ -32,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 for(int j =0; j<3; j++){
                     for(int k =0; k<3; k++){
                         for(int l =0; l<3; l++){
+                            //System.out.println(i + " " + j+ "");
+
+                            System.out.println(i*3+j*3+k*3+l);
                             cards[i*3+j*3+k*3+l] = new Card(i,j,k,l);
-                            System.out.println(cards[i*3+j*3+k*3+l].toString());
+                            System.out.println(cards[i*3+j*3+k*3+l]);
                         }
                     }
                 }
@@ -41,10 +44,10 @@ public class MainActivity extends AppCompatActivity {
             shuffleArray(cards);
 
             System.out.println(cards);
-//
-//            for(int j = 0; j<81; j++){
-//                System.out.println(cards[j].toString());
-//            }
+
+            for(int j = 0; j<81; j++){
+                System.out.println(cards[j].toString());
+            }
 
             //how to set imagebutton image, will need this later.
             //ImageButton btn = (ImageButton)findViewById(R.id.imageButton1);
