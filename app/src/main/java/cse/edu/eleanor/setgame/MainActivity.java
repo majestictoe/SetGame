@@ -26,9 +26,10 @@ public class MainActivity extends AppCompatActivity {
             a[change] = helper;
         }
 
+
+
         protected void onCreate(Bundle savedInstanceState) {
             Card[] cards = new Card[81];
-            int x = 0;
             for(int i =0; i<3; i++){
                 for(int j =0; j<3; j++){
                     for(int k =0; k<3; k++){
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                             System.out.println(i*3+j*3+k*3+l);
                             cards[i*3+j*3+k*3+l] = new Card(i,j,k,l);
-                            System.out.println(cards[i*3+j*3+k*3+l]);
+                            System.out.println(cards[i*27+j*9+k*3+l]);
                         }
                     }
                 }
