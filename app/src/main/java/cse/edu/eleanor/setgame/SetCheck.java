@@ -76,4 +76,41 @@ public class SetCheck {
             return false;
         }
     }
+
+    public String setExplanation(int[] setCheckResults){
+        String colorStatus;
+        String numberStatus;
+        String shapeStatus;
+        String shadingStatus;
+
+        if(setCheckResults[0] != 2){
+            colorStatus = "";
+        }else{
+            colorStatus = "Two of the colors are the same, and one is different. ";
+        }
+
+        if(setCheckResults[1] != 2){
+            numberStatus = "";
+        }else{
+            numberStatus = "Two of the numbers are the same, and one is different. ";
+        }
+
+        if(setCheckResults[2] != 2){
+            shapeStatus = "";
+        }else{
+            shapeStatus = "Two of the shapes are the same, and one is different. ";
+        }
+
+        if(setCheckResults[3] != 2){
+            shadingStatus = "";
+        }else{
+            shadingStatus = "Two of the shapes are the same, and one is different. ";
+        }
+
+        if(isSet(setCheckResults)) {
+            return "Congratulations! You have a set!";
+        }else{
+            return "If two of any attribute are the same while one is different, it is not a set. "+colorStatus + numberStatus + shapeStatus + shadingStatus;
+        }
+    }
 }
