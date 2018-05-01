@@ -9,63 +9,71 @@ public class SetCheck {
     Card card2;
     Card card3;
 
-    SetCheck(Card x, Card y, Card z, String[] checkSet) {
+    SetCheck(Card x, Card y, Card z) {
         card1 = x;
         card2 = y;
         card3 = z;
     }
 
-    public String[] checkSet(){
+    public int[] checkSet(){
 
-        String cColorSame;
-        String cNumberSame;
-        String cShapeSame;
-        String cShadingSame;
+        int cColorSame;
+        int cNumberSame;
+        int cShapeSame;
+        int cShadingSame;
 
         if(card1.cColor() == card2.cColor() && card2.cColor() == card3.cColor() && card1.cColor() == card3.cColor()){
-            cColorSame = "all";
+            cColorSame = 3;
         } else {
             if(card1.cColor() != card2.cColor() && card2.cColor() != card3.cColor() && card1.cColor() != card3.cColor()){
-                cColorSame = "none";
+                cColorSame = 0;
             }
             else{
-                cColorSame = "two";
+                cColorSame = 2;
             }
         }
 
         if(card1.cNumber() == card2.cNumber() && card2.cNumber() == card3.cNumber() && card1.cNumber() == card3.cNumber()){
-            cNumberSame = "all";
+            cNumberSame = 3;
         } else {
             if(card1.cNumber() != card2.cNumber() && card2.cNumber() != card3.cNumber() && card1.cNumber() != card3.cNumber()){
-                cNumberSame = "none";
+                cNumberSame = 0;
             }
             else{
-                cNumberSame = "two";
+                cNumberSame = 2;
             }
         }
 
         if(card1.cShape() == card2.cShape() && card2.cShape() == card3.cShape() && card1.cShape() == card3.cShape()){
-            cShapeSame = "all";
+            cShapeSame = 3;
         } else {
             if(card1.cShape() != card2.cShape() && card2.cShape() != card3.cShape() && card1.cShape() != card3.cShape()){
-                cShapeSame = "none";
+                cShapeSame = 0;
             }
             else{
-                cShapeSame = "two";
+                cShapeSame = 2;
             }
         }
 
         if(card1.cShading() == card2.cShading() && card2.cShading() == card3.cShading() && card1.cShading() == card3.cShading()){
-            cShadingSame = "all";
+            cShadingSame = 3;
         } else {
             if(card1.cShading() != card2.cShading() && card2.cShading() != card3.cShading() && card1.cShading() != card3.cShading()){
-                cShadingSame = "none";
+                cShadingSame = 0;
             }
             else{
-                cShadingSame = "two";
+                cShadingSame = 2;
             }
         }
 
-        return new String[] {cColorSame, cNumberSame, cShapeSame, cShadingSame};
+        return new int[] {cColorSame, cNumberSame, cShapeSame, cShadingSame};
+    }
+
+    public boolean isSet(int[] setCheckResults){
+        if(setCheckResults[0] != 2 && setCheckResults[1] != 2 && setCheckResults[2] != 2 && setCheckResults[3] !=2) {
+            return true;
+        }else{
+            return false;
+        }
     }
 }
