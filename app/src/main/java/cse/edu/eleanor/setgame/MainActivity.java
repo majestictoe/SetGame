@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 for(int j = 0; j<3; j++){
                     for(int k = 0; k<2; k++){
                         System.out.println(i*9+j*3+k);
-                        String cardName = "card"+Integer.toString(i)+Integer.toString(k)+Integer.toString(0)+Integer.toString(j);
+                        String cardName = "card"+Integer.toString(i)+Integer.toString(k)+Integer.toString(0)+Integer.toString(j)+".png";
                         betaCards[i*9+j*3+k] = new Card(i,k,0,j,cardName);
                         System.out.println(betaCards[i*9+j*3+k]);
                     }
@@ -63,8 +63,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             shuffleArray(betaCards);
-
-
 
             //how to set imagebutton image, will need this later.
             //ImageButton btn = (ImageButton)findViewById(R.id.imageButton1);
