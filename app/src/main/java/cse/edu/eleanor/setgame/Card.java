@@ -7,7 +7,7 @@ public class Card {
     int number;
     int shape;
     int shading;
-    Card(int Color,int Number,int Shape, int Shading){
+    Card(int Color,int Number,int Shape, int Shading, String cardname){
         color = Color;
         number = Number;
         shape = Shape;
@@ -18,20 +18,19 @@ public class Card {
         return("Color:"+color+" Number:"+number+" Shape:"+shape+" Shading: "+shading);
     }
 
+    //color: 0: red 1: green 2: purple
     public int cColor(){
         return color;
     }
-
+    //number: 0: 1 1: 2 2: 3
     public int cNumber(){
         return number;
     }
-
+    //shape: 0: squiggle 1: oval 2: diamond
     public int cShape(){
         return shape;
     }
-
-    public int cShading(){
-        return shading;
-    }
+    //shading: 0: bold 1: half 2: empty
+    public int cShading(){return shading;}
 
 }
