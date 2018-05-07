@@ -5,7 +5,11 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 import android.content.pm.ActivityInfo;
+
+import java.util.Arrays;
 import java.util.Random;
+
+import 	android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     //@Override
@@ -17,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
                 int change = i + random.nextInt(n - i);
                 swap(a, i, change);
             }
+            System.out.println(Arrays.toString(a));
         }
 
         private static void swap(Card[] a, int i, int change) {
@@ -54,15 +59,24 @@ public class MainActivity extends AppCompatActivity {
             for(int i = 0; i<3; i++){
                 for(int j = 0; j<3; j++){
                     for(int k = 0; k<2; k++){
-                        System.out.println(i*9+j*3+k);
+                        System.out.println(k*9+j*3+i);
                         String cardName = "card"+Integer.toString(i)+Integer.toString(k)+Integer.toString(0)+Integer.toString(j)+".png";
-                        betaCards[i*9+j*3+k] = new Card(i,k,0,j,cardName);
-                        System.out.println(betaCards[i*9+j*3+k]);
+                        betaCards[k*9+j*3+i] = new Card(i,k,0,j,cardName);
+                        System.out.println(betaCards[k*9+j*3+i]);
                     }
                 }
             }
 
+            System.out.println(Arrays.toString(betaCards));
+
             shuffleArray(betaCards);
+
+            int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
+            for(int i=0; i<buttonIDs.length; i++) {
+                ImageButton b =findViewById(buttonIDs[i]);
+                String name = "R.drawable."+betaCards[i].fileName();
+                b.setBackgroundResource(Integer.parseInt(name));
+            }
 
             //how to set imagebutton image, will need this later.
             //ImageButton btn = (ImageButton)findViewById(R.id.imageButton1);

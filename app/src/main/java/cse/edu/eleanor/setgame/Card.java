@@ -7,15 +7,21 @@ public class Card {
     int number;
     int shape;
     int shading;
-    Card(int Color,int Number,int Shape, int Shading, String cardname){
+    String name;
+    Card(int Color,int Number,int Shape, int Shading, String cardName){
         color = Color;
         number = Number;
         shape = Shape;
         shading = Shading;
+        name = cardName;
     }
 
     public String toString(){
         return("Color:"+color+" Number:"+number+" Shape:"+shape+" Shading: "+shading);
+    }
+
+    public String fileName(){
+        return name;
     }
 
     //color: 0: red 1: green 2: purple
