@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
             int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
             for(int i=0; i<buttonIDs.length; i++) {
                 ImageButton b =findViewById(buttonIDs[i]);
-                String name = "R.drawable."+betaCards[i].fileName();
-                b.setBackgroundResource(Integer.parseInt(name));
+                int name = Integer.parseInt(betaCards[i].fileName());
+                //b.setBackgroundResource();
             }
 
             //how to set imagebutton image, will need this later.
