@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //stolen from stackOverflow
+        //not working >:(
 
         public int getDrawableId(String name){
             try {
