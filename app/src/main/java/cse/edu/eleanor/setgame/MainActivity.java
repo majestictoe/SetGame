@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 import 	android.widget.ImageButton;
+import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
     //@Override
@@ -28,6 +29,18 @@ public class MainActivity extends AppCompatActivity {
             Card helper = a[i];
             a[i] = a[change];
             a[change] = helper;
+        }
+
+        //stolen from stackOverflow
+
+        public int getDrawableId(String name){
+            try {
+                Field fld = R.drawable.class.getField(name);
+                return fld.getInt(null);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            return -1;
         }
 
         protected void onCreate(Bundle savedInstanceState) {
@@ -74,8 +87,7 @@ public class MainActivity extends AppCompatActivity {
             int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
             for(int i=0; i<buttonIDs.length; i++) {
                 ImageButton b =findViewById(buttonIDs[i]);
-                int name = Integer.parseInt(betaCards[i].fileName());
-                //b.setBackgroundResource();
+                b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
             }
 
             //how to set imagebutton image, will need this later.
