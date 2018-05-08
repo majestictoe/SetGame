@@ -1,6 +1,8 @@
 package cse.edu.eleanor.setgame;
 
 import android.widget.ImageButton;
+import android.os.Environment;
+import java.io.File;
 
 public class Card {
     int color;
@@ -21,7 +23,8 @@ public class Card {
     }
 
     public String fileName(){
-        return "app/src/main/res/drawable/"+name;
+        File dataDir = Environment.getDataDirectory();
+        return dataDir.getPath()+"/"+name;
     }
 
     //color: 0: red 1: green 2: purple
