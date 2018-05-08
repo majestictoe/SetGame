@@ -21,7 +21,7 @@ public class Card {
     }
 
     public String fileName(){
-        return "/src/main/res/drawable/"+name;
+        return "app/src/main/res/drawable/"+name;
     }
 
     //color: 0: red 1: green 2: purple
