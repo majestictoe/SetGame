@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 import 	android.widget.ImageButton;
+import android.graphics.drawable.Drawable;
 import java.lang.reflect.Field;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         //stolen from stackOverflow
         //not working >:(
 
-        public int getDrawableId(String name){
-            try {
-                Field fld = R.drawable.class.getField(name);
-                return fld.getInt(null);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            return -1;
-        }
+//        public int getDrawableId(String name){
+//            try {
+//                Field fld = R.drawable.class.getField(name);
+//                return fld.getInt(null);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//            return -1;
+//        }
 
         protected void onCreate(Bundle savedInstanceState) {
             //code for when I make the whole deck of 81.
@@ -73,8 +74,13 @@ public class MainActivity extends AppCompatActivity {
             for(int i = 0; i<3; i++){
                 for(int j = 0; j<3; j++){
                     for(int k = 0; k<2; k++){
+                        String cardName;
                         System.out.println(k*9+j*3+i);
-                        String cardName = "card"+Integer.toString(i)+Integer.toString(k)+Integer.toString(0)+Integer.toString(j)+".png";
+                        if(k==0) {
+                            cardName = "card" + Integer.toString(i) + Integer.toString(k) + Integer.toString(0) + Integer.toString(j) + ".png";
+                        }else{
+                            cardName = "card" + Integer.toString(i) + Integer.toString(k+1) + Integer.toString(0) + Integer.toString(j) + ".png";
+                        }
                         betaCards[k*9+j*3+i] = new Card(i,k,0,j,cardName);
                         System.out.println(betaCards[k*9+j*3+i]);
                     }
@@ -88,7 +94,10 @@ public class MainActivity extends AppCompatActivity {
             int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
             for(int i=0; i<buttonIDs.length; i++) {
                 ImageButton b =findViewById(buttonIDs[i]);
-                b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
+                System.out.println(betaCards[i].fileName());
+                Drawable d = Drawable.createFromPath(betaCards[i].fileName());
+                //b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
+                //https://stackoverflow.com/questions/5834221/android-drawable-from-file-path
             }
 
             //how to set imagebutton image, will need this later.
