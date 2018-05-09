@@ -77,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
                         String cardName;
                         System.out.println(k*9+j*3+i);
                         if(k==0) {
-                            cardName = "card" + Integer.toString(i) + Integer.toString(k) + Integer.toString(0) + Integer.toString(j) + ".png";
+                            cardName = "card" + Integer.toString(i) + Integer.toString(k) + Integer.toString(0) + Integer.toString(j);
                         }else{
-                            cardName = "card" + Integer.toString(i) + Integer.toString(k+1) + Integer.toString(0) + Integer.toString(j) + ".png";
+                            cardName = "card" + Integer.toString(i) + Integer.toString(k+1) + Integer.toString(0) + Integer.toString(j);
                         }
                         betaCards[k*9+j*3+i] = new Card(i,k,0,j,cardName);
                         System.out.println(betaCards[k*9+j*3+i]);
@@ -95,7 +95,61 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0; i<buttonIDs.length; i++) {
                 ImageButton b =findViewById(buttonIDs[i]);
                 System.out.println(betaCards[i].fileName());
-                Drawable d = Drawable.createFromPath(betaCards[i].fileName());
+                if(betaCards[i].fileName() == "card0000"){
+                    b.setImageResource(R.drawable.card0000);
+                }
+                if(betaCards[i].fileName() == "card0001"){
+                    b.setImageResource(R.drawable.card0001);
+                }
+                if(betaCards[i].fileName() == "card0002"){
+                    b.setImageResource(R.drawable.card0002png);
+                }
+                if(betaCards[i].fileName() == "card0200"){
+                    b.setImageResource(R.drawable.card0200);
+                }
+                if(betaCards[i].fileName() == "card0201"){
+                    b.setImageResource(R.drawable.card0201);
+                }
+                if(betaCards[i].fileName() == "card0202"){
+                    b.setImageResource(R.drawable.card0202);
+                }
+                if(betaCards[i].fileName() == "card1000"){
+                    b.setImageResource(R.drawable.card1000);
+                }
+                if(betaCards[i].fileName() == "card1001"){
+                    b.setImageResource(R.drawable.card1001);
+                }
+                if(betaCards[i].fileName() == "card1002"){
+                    b.setImageResource(R.drawable.card1002);
+                }
+                if(betaCards[i].fileName() == "card1200"){
+                    b.setImageResource(R.drawable.card1200);
+                }
+                if(betaCards[i].fileName() == "card1201"){
+                    b.setImageResource(R.drawable.card1201);
+                }
+                if(betaCards[i].fileName() == "card1202"){
+                    b.setImageResource(R.drawable.card1202);
+                }
+                if(betaCards[i].fileName() == "card2000"){
+                    b.setImageResource(R.drawable.card2000);
+                }
+                if(betaCards[i].fileName() == "card2001"){
+                    b.setImageResource(R.drawable.card2001);
+                }
+                if(betaCards[i].fileName() == "card2002"){
+                    b.setImageResource(R.drawable.card2002);
+                }
+                if(betaCards[i].fileName() == "card2200"){
+                    b.setImageResource(R.drawable.card2200);
+                }
+                if(betaCards[i].fileName() == "card2201"){
+                    b.setImageResource(R.drawable.card2201);
+                }
+                if(betaCards[i].fileName() == "card2202"){
+                    b.setImageResource(R.drawable.card2202);
+                }
+                //Drawable d = Drawable.createFromPath(betaCards[i].fileName());
                 //b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
                 //https://stackoverflow.com/questions/5834221/android-drawable-from-file-path
             }

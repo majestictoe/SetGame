@@ -23,8 +23,7 @@ public class Card {
     }
 
     public String fileName(){
-        File dataDir = Environment.getDataDirectory();
-        return dataDir.getPath()+"/"+name;
+        return name;
     }
 
     //color: 0: red 1: green 2: purple
