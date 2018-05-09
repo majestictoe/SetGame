@@ -16,7 +16,7 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/untitled"
+            android:src="@drawable/untitled"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
@@ -29,7 +29,7 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton4"
             app:layout_constraintStart_toEndOf="@+id/imageButton0"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/untitled"
+            android:src="@drawable/untitled"
             tools:ignore="MissingConstraints" />
 
         <ImageButton

@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i=0; i<buttonIDs.length; i++) {
                 ImageButton b =findViewById(buttonIDs[i]);
                 System.out.println(betaCards[i].fileName());
-                if(betaCards[i].fileName() == "card0000"){
+                if(betaCards[i].fileName()== "card0000"){
                     b.setImageResource(R.drawable.card0000);
                 }
                 if(betaCards[i].fileName() == "card0001"){
