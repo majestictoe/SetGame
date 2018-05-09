@@ -91,69 +91,6 @@ public class MainActivity extends AppCompatActivity {
 
             shuffleArray(betaCards);
 
-            int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
-            for(int i=0; i<buttonIDs.length; i++) {
-                ImageButton b =findViewById(buttonIDs[i]);
-                System.out.println(betaCards[i].fileName());
-                if(betaCards[i].fileName()== "card0000"){
-                    b.setImageResource(R.drawable.card0000);
-                }
-                if(betaCards[i].fileName() == "card0001"){
-                    b.setImageResource(R.drawable.card0001);
-                }
-                if(betaCards[i].fileName() == "card0002"){
-                    b.setImageResource(R.drawable.card0002png);
-                }
-                if(betaCards[i].fileName() == "card0200"){
-                    b.setImageResource(R.drawable.card0200);
-                }
-                if(betaCards[i].fileName() == "card0201"){
-                    b.setImageResource(R.drawable.card0201);
-                }
-                if(betaCards[i].fileName() == "card0202"){
-                    b.setImageResource(R.drawable.card0202);
-                }
-                if(betaCards[i].fileName() == "card1000"){
-                    b.setImageResource(R.drawable.card1000);
-                }
-                if(betaCards[i].fileName() == "card1001"){
-                    b.setImageResource(R.drawable.card1001);
-                }
-                if(betaCards[i].fileName() == "card1002"){
-                    b.setImageResource(R.drawable.card1002);
-                }
-                if(betaCards[i].fileName() == "card1200"){
-                    b.setImageResource(R.drawable.card1200);
-                }
-                if(betaCards[i].fileName() == "card1201"){
-                    b.setImageResource(R.drawable.card1201);
-                }
-                if(betaCards[i].fileName() == "card1202"){
-                    b.setImageResource(R.drawable.card1202);
-                }
-                if(betaCards[i].fileName() == "card2000"){
-                    b.setImageResource(R.drawable.card2000);
-                }
-                if(betaCards[i].fileName() == "card2001"){
-                    b.setImageResource(R.drawable.card2001);
-                }
-                if(betaCards[i].fileName() == "card2002"){
-                    b.setImageResource(R.drawable.card2002);
-                }
-                if(betaCards[i].fileName() == "card2200"){
-                    b.setImageResource(R.drawable.card2200);
-                }
-                if(betaCards[i].fileName() == "card2201"){
-                    b.setImageResource(R.drawable.card2201);
-                }
-                if(betaCards[i].fileName() == "card2202"){
-                    b.setImageResource(R.drawable.card2202);
-                }
-                //Drawable d = Drawable.createFromPath(betaCards[i].fileName());
-                //b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
-                //https://stackoverflow.com/questions/5834221/android-drawable-from-file-path
-            }
-
             //how to set imagebutton image, will need this later.
             //ImageButton btn = (ImageButton)findViewById(R.id.imageButton1);
             //btn.setImageResource(R.drawable.actions_record);
@@ -163,5 +100,68 @@ public class MainActivity extends AppCompatActivity {
             //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
+            for(int i=0; i<buttonIDs.length; i++) {
+                ImageButton b =findViewById(buttonIDs[i]);
+                System.out.println(betaCards[i].fileName());
+                if (betaCards[i].fileName().equals("card0000")) {
+                    System.out.println("Hi from card0000");
+                    b.setImageResource(R.drawable.card0000);
+                }
+                if(betaCards[i].fileName().equals("card0001")){
+                    b.setImageResource(R.drawable.card0001);
+                }
+                if(betaCards[i].fileName().equals("card0002")){
+                    b.setImageResource(R.drawable.card0002png);
+                }
+                if(betaCards[i].fileName().equals("card0200")){
+                    b.setImageResource(R.drawable.card0200);
+                }
+                if(betaCards[i].fileName().equals("card0201")){
+                    b.setImageResource(R.drawable.card0201);
+                }
+                if(betaCards[i].fileName().equals("card0202")){
+                    b.setImageResource(R.drawable.card0202);
+                }
+                if(betaCards[i].fileName().equals("card1000")){
+                    b.setImageResource(R.drawable.card1000);
+                }
+                if(betaCards[i].fileName().equals("card1001")){
+                    b.setImageResource(R.drawable.card1001);
+                }
+                if(betaCards[i].fileName().equals("card1002")){
+                    b.setImageResource(R.drawable.card1002);
+                }
+                if(betaCards[i].fileName().equals("card1200")){
+                    b.setImageResource(R.drawable.card1200);
+                }
+                if(betaCards[i].fileName().equals("card1201")){
+                    b.setImageResource(R.drawable.card1201);
+                }
+                if(betaCards[i].fileName().equals("card1202")){
+                    b.setImageResource(R.drawable.card1202);
+                }
+                if(betaCards[i].fileName().equals("card2000")){
+                    b.setImageResource(R.drawable.card2000);
+                }
+                if(betaCards[i].fileName().equals("card2001")){
+                    b.setImageResource(R.drawable.card2001);
+                }
+                if(betaCards[i].fileName().equals("card2002")){
+                    b.setImageResource(R.drawable.card2002);
+                }
+                if(betaCards[i].fileName().equals("card2200")){
+                    b.setImageResource(R.drawable.card2200);
+                }
+                if(betaCards[i].fileName().equals("card2201")){
+                    b.setImageResource(R.drawable.card2201);
+                }
+                if(betaCards[i].fileName().equals("card2202")){
+                    b.setImageResource(R.drawable.card2202);
+                }
+                //Drawable d = Drawable.createFromPath(betaCards[i].fileName());
+                //b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
+                //https://stackoverflow.com/questions/5834221/android-drawable-from-file-path
+            }
     }
 }

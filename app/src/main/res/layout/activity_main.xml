@@ -17,7 +17,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:src="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton3"
@@ -30,7 +31,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton0"
             app:layout_constraintTop_toTopOf="parent"
             android:src="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton6"
@@ -43,7 +45,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton9"
@@ -56,7 +59,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton12"
@@ -69,7 +73,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton9"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton15"
@@ -82,7 +87,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton12"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton18"
@@ -95,7 +101,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton15"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton1"
@@ -106,7 +113,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton2"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton4"
@@ -117,7 +125,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton5"
             app:layout_constraintStart_toEndOf="@+id/imageButton1"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton7"
@@ -128,7 +137,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton8"
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton10"
@@ -139,7 +149,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton11"
             app:layout_constraintStart_toEndOf="@+id/imageButton7"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton13"
@@ -150,7 +161,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton14"
             app:layout_constraintStart_toEndOf="@+id/imageButton10"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton16"
@@ -161,7 +173,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton17"
             app:layout_constraintStart_toEndOf="@+id/imageButton13"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton19"
@@ -172,7 +185,8 @@
             app:layout_constraintBottom_toTopOf="@+id/imageButton20"
             app:layout_constraintStart_toEndOf="@+id/imageButton16"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton2"
@@ -183,7 +197,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton5"
@@ -194,7 +209,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton8"
@@ -205,7 +221,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton5"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton11"
@@ -216,7 +233,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton8"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton14"
@@ -227,7 +245,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton11"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton17"
@@ -238,7 +257,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton14"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <ImageButton
             android:id="@+id/imageButton20"
@@ -249,7 +269,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton17"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:scaleType="fitXY"/>
 
         <Button
             android:id="@+id/button"
@@ -266,7 +287,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.298"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            android:scaleType="fitXY"/>
 
         <Button
             android:id="@+id/button2"
@@ -283,7 +305,8 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton18"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.497"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            android:scaleType="fitXY"/>
 
         <Button
             android:id="@+id/button3"
@@ -300,6 +323,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton19"
             app:layout_constraintTop_toBottomOf="@+id/button2"
             app:layout_constraintVertical_bias="0.72"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            android:scaleType="fitXY"/>
 
 </android.support.constraint.ConstraintLayout>
