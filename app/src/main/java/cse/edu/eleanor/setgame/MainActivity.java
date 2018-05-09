@@ -32,19 +32,6 @@ public class MainActivity extends AppCompatActivity {
             a[change] = helper;
         }
 
-        //stolen from stackOverflow
-        //not working >:(
-
-//        public int getDrawableId(String name){
-//            try {
-//                Field fld = R.drawable.class.getField(name);
-//                return fld.getInt(null);
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//            return -1;
-//        }
-
         protected void onCreate(Bundle savedInstanceState) {
             //code for when I make the whole deck of 81.
 //            Card[] cards = new Card[81];
@@ -91,13 +78,8 @@ public class MainActivity extends AppCompatActivity {
 
             shuffleArray(betaCards);
 
-            //how to set imagebutton image, will need this later.
-            //ImageButton btn = (ImageButton)findViewById(R.id.imageButton1);
-            //btn.setImageResource(R.drawable.actions_record);
-
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
-            //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
             int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
@@ -159,9 +141,6 @@ public class MainActivity extends AppCompatActivity {
                 if(betaCards[i].fileName().equals("card2202")){
                     b.setImageResource(R.drawable.card2202);
                 }
-                //Drawable d = Drawable.createFromPath(betaCards[i].fileName());
-                //b.setBackgroundResource(getDrawableId(betaCards[i].fileName()));
-                //https://stackoverflow.com/questions/5834221/android-drawable-from-file-path
             }
     }
 }
