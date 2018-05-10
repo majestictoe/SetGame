@@ -11,28 +11,28 @@
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="button0Toggle"
+            android:scaleType="fitXY"
+            android:src="@drawable/untitled"
             app:layout_constraintBottom_toTopOf="@+id/imageButton1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="button3Toggle"
+            android:scaleType="fitXY"
+            android:src="@drawable/untitled"
             app:layout_constraintBottom_toTopOf="@+id/imageButton4"
             app:layout_constraintStart_toEndOf="@+id/imageButton0"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton6"
@@ -109,24 +109,24 @@
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button1Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton2"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button4Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton5"
             app:layout_constraintStart_toEndOf="@+id/imageButton1"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton7"
@@ -193,12 +193,12 @@
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button2Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton5"
@@ -278,17 +278,15 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:scaleType="fitXY"
             android:text="Get Cards"
             app:layout_constraintBottom_toTopOf="@+id/button2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.298"
-            android:layout_marginRight="8dp"
-            android:scaleType="fitXY"/>
+            app:layout_constraintVertical_bias="0.298" />
 
         <Button
             android:id="@+id/button2"
