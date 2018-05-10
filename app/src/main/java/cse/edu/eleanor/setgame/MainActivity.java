@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     boolean button8Toggled = false;
     boolean button9Toggled = false;
     boolean button10Toggled = false;
-    boolean button11toggled = false;
+    boolean button11Toggled = false;
     boolean button12Toggled = false;
     boolean button13Toggled = false;
     boolean button14Toggled = false;
@@ -121,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
                 button.getBackground().setAlpha(45);
                 button0Toggled = true;
             }
-
         }
         public void button1Toggle(View view){
             ImageButton button = findViewById(R.id.imageButton1);
@@ -132,7 +131,6 @@ public class MainActivity extends AppCompatActivity {
                 button.getBackground().setAlpha(45);
                 button1Toggled = true;
             }
-
         }
         public void button2Toggle(View view){
             ImageButton button = findViewById(R.id.imageButton2);
@@ -143,7 +141,6 @@ public class MainActivity extends AppCompatActivity {
                 button.getBackground().setAlpha(45);
                 button2Toggled = true;
             }
-
         }
         public void button3Toggle(View view){
             ImageButton button = findViewById(R.id.imageButton3);
@@ -154,7 +151,6 @@ public class MainActivity extends AppCompatActivity {
                 button.getBackground().setAlpha(45);
                 button3Toggled = true;
             }
-
         }
         public void button4Toggle(View view){
             ImageButton button = findViewById(R.id.imageButton4);
@@ -165,7 +161,136 @@ public class MainActivity extends AppCompatActivity {
                 button.getBackground().setAlpha(45);
                 button4Toggled = true;
             }
-
+        }
+        public void button5Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton5);
+            if(button5Toggled){
+                button.getBackground().setAlpha(255);
+                button5Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button5Toggled = true;
+            }
+        }
+        public void button6Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton6);
+            if(button6Toggled){
+                button.getBackground().setAlpha(255);
+                button6Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button6Toggled = true;
+            }
+        }
+        public void button7Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton7);
+            if(button7Toggled){
+                button.getBackground().setAlpha(255);
+                button7Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button7Toggled = true;
+            }
+        }
+        public void button8Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton8);
+            if(button8Toggled){
+                button.getBackground().setAlpha(255);
+                button8Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button8Toggled = true;
+            }
+        }
+        public void button9Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton9);
+            if(button9Toggled){
+                button.getBackground().setAlpha(255);
+                button9Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button9Toggled = true;
+            }
+        }
+        public void button10Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton10);
+            if(button10Toggled){
+                button.getBackground().setAlpha(255);
+                button10Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button10Toggled = true;
+            }
+        }
+        public void button11Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton11);
+            if(button11Toggled){
+                button.getBackground().setAlpha(255);
+                button11Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button11Toggled = true;
+            }
+        }
+        public void button12Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton12);
+            if(button12Toggled){
+                button.getBackground().setAlpha(255);
+                button12Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button12Toggled = true;
+            }
+        }
+        public void button13Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton13);
+            if(button13Toggled){
+                button.getBackground().setAlpha(255);
+                button13Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button13Toggled = true;
+            }
+        }
+        public void button14Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton14);
+            if(button14Toggled){
+                button.getBackground().setAlpha(255);
+                button14Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button14Toggled = true;
+            }
+        }
+        public void button15Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton15);
+            if(button15Toggled){
+                button.getBackground().setAlpha(255);
+                button15Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button15Toggled = true;
+            }
+        }
+        public void button16Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton16);
+            if(button16Toggled){
+                button.getBackground().setAlpha(255);
+                button16Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button16Toggled = true;
+            }
+        }
+        public void button17Toggle(View view){
+            ImageButton button = findViewById(R.id.imageButton17);
+            if(button17Toggled){
+                button.getBackground().setAlpha(255);
+                button17Toggled = false;
+            }else{
+                button.getBackground().setAlpha(45);
+                button17Toggled = true;
+            }
         }
 
         protected void onCreate(Bundle savedInstanceState) {

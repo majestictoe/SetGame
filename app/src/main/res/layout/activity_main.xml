@@ -39,56 +39,56 @@
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="button6Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton7"
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton9"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="button9Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton10"
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton12"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="button12Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton13"
             app:layout_constraintStart_toEndOf="@+id/imageButton9"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton15"
             android:layout_width="65dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:onClick="button15Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton16"
             app:layout_constraintStart_toEndOf="@+id/imageButton12"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton18"
@@ -133,48 +133,48 @@
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button7Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton8"
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton10"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button10Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton11"
             app:layout_constraintStart_toEndOf="@+id/imageButton7"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton13"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button13Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton14"
             app:layout_constraintStart_toEndOf="@+id/imageButton10"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton16"
             android:layout_width="64dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button16Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toTopOf="@+id/imageButton17"
             app:layout_constraintStart_toEndOf="@+id/imageButton13"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton19"
@@ -205,60 +205,60 @@
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button5Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton2"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton8"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button8Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton5"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton11"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button11Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton8"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton14"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button14Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton11"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton17"
             android:layout_width="60dp"
             android:layout_height="93dp"
             android:layout_marginBottom="8dp"
-            android:layout_marginLeft="8dp"
+            android:onClick="button17Toggle"
+            android:scaleType="fitXY"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageButton14"
             app:srcCompat="@drawable/untitled"
-            tools:ignore="MissingConstraints"
-            android:scaleType="fitXY"/>
+            tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/imageButton20"
