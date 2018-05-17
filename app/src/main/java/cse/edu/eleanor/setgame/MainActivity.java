@@ -293,6 +293,19 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
+        public int toggledNumberCheck(){
+            boolean[] buttonToggles = new boolean[] {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
+            int amount = 0;
+            for(int i = 0; i<18; i++){
+                if(buttonToggles[i] = true){
+                    amount++;
+                }else{
+
+                }
+            }
+            return amount;
+        }
+
         protected void onCreate(Bundle savedInstanceState) {
             //code for when I make the whole deck of 81.
 //            Card[] cards = new Card[81];
