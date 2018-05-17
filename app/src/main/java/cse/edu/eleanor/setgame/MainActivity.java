@@ -319,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
             return A;
         }
 
-        public void setCheckOnClick(){
+        public void setCheckOnClick(View view){
             int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
             boolean[] buttonToggles = new boolean[] {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
             if(toggledNumberCheck() == 2 ){
@@ -330,7 +330,12 @@ public class MainActivity extends AppCompatActivity {
                     buttonToggles[i] = false;
                 }
                 SetCheck check = new SetCheck(betaCards[toggledList[0]], betaCards[toggledList[1]], betaCards[toggledList[2]]);
+                if(check.isSet(check.checkSet())){
+                   //where I'd remove cards
+                }else{
 
+                }
+                System.out.println(check.setExplanation(check.checkSet()));
             }else{
                 for(int i = 0; i<18; i++) {
                     ImageButton button = findViewById(buttonIDs[i]);
@@ -383,11 +388,11 @@ public class MainActivity extends AppCompatActivity {
             }
 
             System.out.println(Arrays.toString(betaCards));
-            shuffleArray(betaCards);
 
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_main);
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            shuffleArray(betaCards);
     }
 }
