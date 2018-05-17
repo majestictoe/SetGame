@@ -302,6 +302,7 @@ public class MainActivity extends AppCompatActivity {
                 }else{
                 }
             }
+            System.out.println(amount+" cards selected.");
             return amount;
         }
 
