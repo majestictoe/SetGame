@@ -316,7 +316,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i = 0; i<18; i++){
                 if(buttonToggles[i] == true){
                     amount++;
-                    A[amount] = i;
+                    A[amount-1] = i;
                 }else{
                 }
             }
