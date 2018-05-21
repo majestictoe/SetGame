@@ -294,10 +294,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public int toggledNumberCheck(){
-            boolean[] buttonToggles = new boolean[] {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
+            //is boolean array actually using these booleans, or is it initializing them?
+            boolean[] buttonToggles = {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
             int amount = 0;
             for(int i = 0; i<18; i++){
-                if(buttonToggles[i] = true){
+                if(buttonToggles[i] == true){
+                    System.out.println("true");
                     amount++;
                 }else{
                 }
@@ -307,22 +309,25 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public int[] whichToggled(){
-            boolean[] buttonToggles = new boolean[] {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
+            System.out.println("hi from whichToggled");
+            boolean[] buttonToggles = {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
             int amount = 0;
             int[] A = {0,0,0};
             for(int i = 0; i<18; i++){
-                if(buttonToggles[i] = true){
+                if(buttonToggles[i] == true){
                     amount++;
                     A[amount] = i;
                 }else{
                 }
             }
+            System.out.println("hi from whichToggled again");
+            System.out.println(Arrays.toString(A));
             return A;
         }
 
         public void setCheckOnClick(View view){
             int[] buttonIDs = new int[] {R.id.imageButton0, R.id.imageButton1, R.id.imageButton2,R.id.imageButton3, R.id.imageButton4, R.id.imageButton5, R.id.imageButton6, R.id.imageButton7, R.id.imageButton8, R.id.imageButton9, R.id.imageButton10, R.id.imageButton11, R.id.imageButton12, R.id.imageButton13, R.id.imageButton14, R.id.imageButton15, R.id.imageButton16, R.id.imageButton17};
-            boolean[] buttonToggles = new boolean[] {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
+            boolean[] buttonToggles = {button0Toggled, button1Toggled, button2Toggled, button3Toggled, button4Toggled, button5Toggled, button6Toggled, button7Toggled, button8Toggled, button9Toggled, button10Toggled, button11Toggled, button12Toggled, button13Toggled, button14Toggled, button15Toggled, button16Toggled, button17Toggled};
             if(toggledNumberCheck() == 2 ){
                 int[] toggledList = whichToggled();
                 for(int i = 0; i<18; i++) {
