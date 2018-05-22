@@ -11,6 +11,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 import 	android.widget.ImageButton;
+import android.widget.TextView;
 import android.graphics.drawable.Drawable;
 import java.lang.reflect.Field;
 
@@ -341,6 +342,8 @@ public class MainActivity extends AppCompatActivity {
                 }else{
 
                 }
+                TextView textView = findViewById(R.id.textView);
+                textView.setText(check.setExplanation(check.checkSet()));
                 System.out.println(check.setExplanation(check.checkSet()));
             }else{
                 for(int i = 0; i<18; i++) {
@@ -348,6 +351,8 @@ public class MainActivity extends AppCompatActivity {
                     button.getBackground().setAlpha(255);
                     buttonToggles[i] = false;
                 }
+                TextView textView = findViewById(R.id.textView);
+                textView.setText("Please select three cards and try again.");
                 System.out.println("Please select three cards and try again.");
             }
         }
