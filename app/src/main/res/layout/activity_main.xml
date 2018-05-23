@@ -321,7 +321,7 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="122dp"
+            android:layout_width="159dp"
             android:layout_height="0dp"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
@@ -330,7 +330,7 @@
             android:text=""
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/imageButton20"
             app:layout_constraintTop_toBottomOf="@+id/button3"
             app:layout_constraintVertical_bias="1.0" />

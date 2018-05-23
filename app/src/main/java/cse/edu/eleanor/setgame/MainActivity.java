@@ -334,9 +334,27 @@ public class MainActivity extends AppCompatActivity {
                 for(int i = 0; i<18; i++) {
                     ImageButton button = findViewById(buttonIDs[i]);
                     button.getBackground().setAlpha(255);
-                    System.out.println("hi from toggle loop");
-                    buttonToggles[i] = false;
+                    //System.out.println("hi from toggle loop");
+                    //buttonToggles[i] = false;
                 }
+                button0Toggled = false;
+                button1Toggled = false;
+                button2Toggled = false;
+                button3Toggled = false;
+                button4Toggled = false;
+                button5Toggled = false;
+                button6Toggled = false;
+                button7Toggled = false;
+                button8Toggled = false;
+                button9Toggled = false;
+                button10Toggled = false;
+                button11Toggled = false;
+                button12Toggled = false;
+                button13Toggled = false;
+                button14Toggled = false;
+                button15Toggled = false;
+                button16Toggled = false;
+                button17Toggled = false;
                 System.out.print("buttonToggles: ");
                 for (int i = 0; i<buttonToggles.length; i++) {
                     System.out.print(buttonToggles[i] +" ");
@@ -362,9 +380,27 @@ public class MainActivity extends AppCompatActivity {
                 for(int i = 0; i<18; i++) {
                     ImageButton button = findViewById(buttonIDs[i]);
                     button.getBackground().setAlpha(255);
-                    System.out.println("hi from toggle loop");
-                    buttonToggles[i] = false;
+                    //System.out.println("hi from toggle loop");
+                    //buttonToggles[i] = false;
                 }
+                button0Toggled = false;
+                button1Toggled = false;
+                button2Toggled = false;
+                button3Toggled = false;
+                button4Toggled = false;
+                button5Toggled = false;
+                button6Toggled = false;
+                button7Toggled = false;
+                button8Toggled = false;
+                button9Toggled = false;
+                button10Toggled = false;
+                button11Toggled = false;
+                button12Toggled = false;
+                button13Toggled = false;
+                button14Toggled = false;
+                button15Toggled = false;
+                button16Toggled = false;
+                button17Toggled = false;
                 TextView textView = findViewById(R.id.textView);
                 textView.setText("Please select three cards and try again.");
                 System.out.println("Please select three cards and try again.");
